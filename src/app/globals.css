@@ -1,26 +1,54 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary-color: 30, 58, 138;  /* blue-900 */
+  --primary-light: 15, 23, 42;   /* navy-950 */
+  --primary-dark: 191, 219, 254; /* blue-200 */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(var(--primary-light));
+  color: rgb(226, 232, 240); /* slate-200 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-geist-sans);
+  color: rgb(var(--primary-dark));
+}
+
+code {
+  font-family: var(--font-geist-mono);
+}
+
+/* Custom animation for the stats bar */
+@keyframes growBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.stats-bar-animation > div {
+  animation: growBar 1.5s ease-out;
+}
+
+/* Custom navy colors */
+.bg-navy-800 {
+  background-color: #1e3a8a; /* Similar to blue-900 */
+}
+
+.bg-navy-900 {
+  background-color: #172554; /* Similar to blue-950 */
+}
+
+.bg-navy-950 {
+  background-color: #0f172a; /* Dark navy */
+}
+
+.text-navy-100 {
+  color: #dbeafe; /* Similar to blue-100 */
+}
+
+.text-navy-200 {
+  color: #bfdbfe; /* Similar to blue-200 */
 }
