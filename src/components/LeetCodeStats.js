@@ -10,12 +10,12 @@ export default function LeetCodeStats({ stats }) {
     let hardCount = 0;
     let totalCount = 0;
     
-    // LeetCode problem counts (approximate as of 2023)
+    // LeetCode problem counts (updated as of March 2025)
     const totalProblems = {
-      Easy: 642,
-      Medium: 1353,
-      Hard: 566,
-      All: 2561
+      Easy: 864,
+      Medium: 1810,
+      Hard: 808,
+      All: 3482
     };
     
     if (hasStats) {

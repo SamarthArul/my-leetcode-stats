@@ -32,6 +32,7 @@ export default async function Home({ searchParams }) {
           </div>
         </div>
         
+        
         {/* LeetCode Stats Bar */}
         <LeetCodeStats stats={userData} />
         
