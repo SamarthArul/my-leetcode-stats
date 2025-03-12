@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Snowflakes from "../components/Snowflakes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-navy-950`}
       >
+        <Snowflakes />
         <header className="bg-navy-800 text-blue-100 shadow-md py-4">
           <div className="container mx-auto px-4">
             <h1 className="text-2xl font-bold">LeetCode Stats Viewer</h1>

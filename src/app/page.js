@@ -31,7 +31,7 @@ export default async function Home({ searchParams }) {
             <UsernameSearch defaultUsername={leetcodeUsername} />
           </div>
         </div>
-        
+
         
         {/* LeetCode Stats Bar */}
         <LeetCodeStats stats={userData} />
@@ -43,7 +43,7 @@ export default async function Home({ searchParams }) {
             The data is updated every time you search for a user.
           </p>
           <p className="text-blue-200">
-            Built with Next.js and Tailwind CSS. Try searching for your own LeetCode username to see your stats!
+            Built with Next.js and Tailwind CSS. Try searching for your own LeetCode username to see your stats.
           </p>
         </div>
       </div>

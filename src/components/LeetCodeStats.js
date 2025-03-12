@@ -36,55 +36,55 @@ export default function LeetCodeStats({ stats }) {
   
     return (
       <div className="w-full my-8 px-4">
-        <div className="bg-navy-800 rounded-lg shadow-md p-6 mb-6">
-          <h2 className="text-2xl font-bold text-blue-300 mb-2 text-center">
+        <div className="bg-theme-card rounded-lg shadow-md p-6 mb-6">
+          <h2 className="text-2xl font-bold text-theme-light mb-2 text-center">
             {hasStats ? (
               <>
-                <span className="text-cyan-400">{stats.username}</span>'s LeetCode Stats
+                <span className="text-theme-accent">{stats.username}</span>'s LeetCode Stats
               </>
             ) : (
               'LeetCode Stats'
             )}
           </h2>
           {hasStats ? (
-            <p className="text-center text-blue-200 mb-4">
-              Showing progress for user <span className="font-semibold text-cyan-300">{stats.username}</span>
+            <p className="text-center text-theme-light mb-4">
+              Showing progress for user <span className="font-semibold text-theme-accent">{stats.username}</span>
             </p>
           ) : (
-            <p className="text-center text-blue-200 mb-4">
+            <p className="text-center text-theme-light mb-4">
               No user data available. Try searching for a valid LeetCode username.
             </p>
           )}
           
           <div className="flex flex-col md:flex-row justify-between gap-2 w-full rounded-xl overflow-hidden shadow-lg">
             {/* Easy Problems */}
-            <div className="bg-blue-900 flex-1 p-4 border-r border-navy-950">
+            <div className="bg-green-900 flex-1 p-4 border-r border-gray-900">
               <div className="text-center">
-                <h3 className="font-bold text-cyan-300">Easy</h3>
-                <div className="text-2xl font-bold text-cyan-200">{easyCount}</div>
-                <div className="text-sm text-cyan-400">
+                <h3 className="font-bold text-green-300">Easy</h3>
+                <div className="text-2xl font-bold text-green-200">{easyCount}</div>
+                <div className="text-sm text-green-400">
                   of {totalProblems.Easy} ({easyPercentage}%)
                 </div>
               </div>
             </div>
             
             {/* Medium Problems */}
-            <div className="bg-blue-800 flex-1 p-4 border-r border-navy-950">
+            <div className="bg-yellow-900 flex-1 p-4 border-r border-gray-900">
               <div className="text-center">
-                <h3 className="font-bold text-blue-300">Medium</h3>
-                <div className="text-2xl font-bold text-blue-200">{mediumCount}</div>
-                <div className="text-sm text-blue-400">
+                <h3 className="font-bold text-yellow-300">Medium</h3>
+                <div className="text-2xl font-bold text-yellow-200">{mediumCount}</div>
+                <div className="text-sm text-yellow-400">
                   of {totalProblems.Medium} ({mediumPercentage}%)
                 </div>
               </div>
             </div>
             
             {/* Hard Problems */}
-            <div className="bg-blue-950 flex-1 p-4 border-r border-navy-950">
+            <div className="bg-red-900 flex-1 p-4 border-r border-gray-900">
               <div className="text-center">
-                <h3 className="font-bold text-indigo-300">Hard</h3>
-                <div className="text-2xl font-bold text-indigo-200">{hardCount}</div>
-                <div className="text-sm text-indigo-400">
+                <h3 className="font-bold text-red-300">Hard</h3>
+                <div className="text-2xl font-bold text-red-200">{hardCount}</div>
+                <div className="text-sm text-red-400">
                   of {totalProblems.Hard} ({hardPercentage}%)
                 </div>
               </div>

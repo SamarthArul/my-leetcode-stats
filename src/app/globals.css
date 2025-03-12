@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: 30, 58, 138;  /* blue-900 */
-  --primary-light: 15, 23, 42;   /* navy-950 */
-  --primary-dark: 191, 219, 254; /* blue-200 */
+  --primary-color: 17, 24, 39;  /* gray-900 */
+  --primary-light: 31, 41, 55;  /* gray-800 */
+  --primary-dark: 249, 250, 251; /* gray-50 */
+  --accent-color: 79, 70, 229;  /* indigo-600 */
 }
 
 body {
-  background-color: rgb(var(--primary-light));
-  color: rgb(226, 232, 240); /* slate-200 */
+  background-color: rgb(17, 24, 39); /* Dark background like nu-leetcoders */
+  color: rgb(229, 231, 235); /* gray-200 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,23 +33,23 @@ code {
   animation: growBar 1.5s ease-out;
 }
 
-/* Custom navy colors */
-.bg-navy-800 {
-  background-color: #1e3a8a; /* Similar to blue-900 */
+/* Custom colors for the new theme */
+.bg-theme-dark {
+  background-color: rgb(17, 24, 39); /* gray-900 */
 }
 
-.bg-navy-900 {
-  background-color: #172554; /* Similar to blue-950 */
+.bg-theme-card {
+  background-color: rgb(31, 41, 55); /* gray-800 */
 }
 
-.bg-navy-950 {
-  background-color: #0f172a; /* Dark navy */
+.bg-theme-accent {
+  background-color: rgb(79, 70, 229); /* indigo-600 */
 }
 
-.text-navy-100 {
-  color: #dbeafe; /* Similar to blue-100 */
+.text-theme-light {
+  color: rgb(229, 231, 235); /* gray-200 */
 }
 
-.text-navy-200 {
-  color: #bfdbfe; /* Similar to blue-200 */
+.text-theme-accent {
+  color: rgb(129, 140, 248); /* indigo-400 */
 }

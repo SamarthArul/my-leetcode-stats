@@ -26,7 +26,7 @@ export default function UsernameSearch({ defaultUsername }) {
           </div>
           <input
             type="text"
-            className="bg-navy-800 border border-blue-700 text-blue-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+            className="bg-gray-800 border border-gray-700 text-gray-100 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-10 p-2.5"
             placeholder="Enter LeetCode username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -35,7 +35,7 @@ export default function UsernameSearch({ defaultUsername }) {
         </div>
         <button
           type="submit"
-          className="p-2.5 ml-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+          className="p-2.5 ml-2 text-sm font-medium text-white bg-indigo-600 rounded-lg border border-indigo-700 hover:bg-indigo-700 focus:ring-4 focus:outline-none focus:ring-indigo-300"
         >
           <span>Search</span>
         </button>
